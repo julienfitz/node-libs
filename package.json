@@ -4,8 +4,12 @@
   "description": "Mad Libs!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jshint index.js\njshint test\n mocha"
   },
   "author": "Lee Baillie",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jshint": "^2.9.6",
+    "mocha": "^5.2.0"
+  }
 }
