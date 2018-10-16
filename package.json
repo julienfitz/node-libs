@@ -1,0 +1,11 @@
+{
+  "name": "mad-libs",
+  "version": "1.0.0",
+  "description": "Mad Libs!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lee Baillie",
+  "license": "ISC"
+}
