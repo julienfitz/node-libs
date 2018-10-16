@@ -28,9 +28,9 @@ http.get(options, (res) => {
 });
 
 function MadLibComponents(input) {
-  this.blanks = input['blanks'];
-  this.title = input['title'];
-  this.value = sanitizeValue(input['value']);
+  this.blanks = input.blanks;
+  this.title = input.title;
+  this.value = sanitizeValue(input.value);
 }
 
 function printNewMadLib(input) {
@@ -51,7 +51,7 @@ function getUserInput(parts, callback) {
   let userResponses = [];
   let i = 0;
 
-  userPrompt(parts[i])
+  userPrompt(parts[i]);
 
   rl.on('line', (line) => {
     userResponses.push(line);
