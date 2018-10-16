@@ -1,3 +1,5 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/bab72ecadafd2f43fb4a/maintainability)](https://codeclimate.com/github/lbaillie/node-libs/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/bab72ecadafd2f43fb4a/test_coverage)](https://codeclimate.com/github/lbaillie/node-libs/test_coverage) [![Build Status](https://travis-ci.org/lbaillie/node-libs.svg?branch=master)](https://travis-ci.org/lbaillie/node-libs)
+
 # Node Mad Libs!
 
 To play:
