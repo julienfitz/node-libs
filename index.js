@@ -1,36 +1,41 @@
 const http = require('http');
+const readline = require('readline');
+const madLibs = require('./utils');
 const host = 'madlibz.herokuapp.com';
 const path = '/api/random';
 const options = {
   host: host,
   path: path
 };
-const readline = require('readline');
 
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
 });
 
-http.get(options, (res) => {
-  let rawData = '';
-  res.on('data', (chunk) => { rawData += chunk; });
-  res.on('end', () => {
-    try {
-      const parsedData = JSON.parse(rawData);
-      printNewMadLib(parsedData);
-    } catch (e) {
-      console.error(e.message);
-    }
-  });
-}).on('error', (e) => {
-  console.error(`ERROR: ${e.message}`);
-});
+getMadLib();
 
 function MadLibComponents(input) {
   this.blanks = input.blanks;
   this.title = input.title;
   this.value = sanitizeValue(input.value);
+}
+
+function getMadLib() {
+  http.get(options, (res) => {
+    let rawData = '';
+    res.on('data', (chunk) => { rawData += chunk; });
+    res.on('end', () => {
+      try {
+        const parsedData = JSON.parse(rawData);
+        printNewMadLib(parsedData);
+      } catch (e) {
+        console.error(e.message);
+      }
+    });
+  }).on('error', (e) => {
+    console.error(`ERROR: ${e.message}`);
+  });
 }
 
 function printNewMadLib(input) {
