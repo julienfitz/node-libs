@@ -70,25 +70,9 @@ function userPrompt(part) {
   rl.prompt();
 }
 
-function getTemplate(userAnswers, value) {
-  let template = '';
-  let arrayLength = value.length;
-
-  for (i = 0; i < arrayLength; i++) {
-    template += value[i];
-
-    // there will always be one more value than userAnswers
-    if (i < arrayLength - 1) {
-      template += userAnswers[i];
-    }
-  }
-
-  console.log(template);
-}
-
 function handleUserInput(parts, value) {
   getUserInput(parts, (userAnswers) => {
-    getTemplate(userAnswers, value);
+    console.log(madLibs.getTemplate(userAnswers, value));
   });
 }
 
