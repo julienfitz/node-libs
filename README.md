@@ -11,3 +11,15 @@ To play:
 1. run `node index.js` and follow the prompts!
 
 If you get stuck and need to exit, you can `ctrl-c` your way outta there!
+
+## Parts of Speech Cheat Sheet!
+
+Mad libs rely on your knowing a little bit about a few parts of speech. If you're like me, you're always forgetting which ones are which! These are the more common ones used in mad libs:
+
+**adjective:** describes, modifies, or gives more information about a noun or a pronoun (cold, happy, young, etc.)
+
+**noun:** name of a thing, a person, an animal, a place, or an idea (Daniel, London, table, hope)
+
+**verb:** shows an action or a state of being (go, speaking, lived, been, listen)
+
+**adverb:** modifies a verb, an adjective, or another adverb. It tells how, where, when (slowly, very, always, quickly)
